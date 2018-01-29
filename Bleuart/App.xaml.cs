@@ -33,7 +33,7 @@ namespace Bleuart
             this.Suspending += OnSuspending;
 
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-            ApplicationView.PreferredLaunchViewSize = new Size(400, 200);
+            ApplicationView.PreferredLaunchViewSize = new Size(360, 640);
         }
 
         /// <summary>

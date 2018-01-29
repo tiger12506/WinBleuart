@@ -9,14 +9,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ComboBox x:Name="cbDevices"  ItemsSource="{x:Bind devices, Mode=OneWay}"  DisplayMemberPath="Name" PlaceholderText="BLE Devices" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="340"
+        <ComboBox x:Name="cbDevices"  ItemsSource="{x:Bind devices, Mode=OneWay}"  DisplayMemberPath="Name" PlaceholderText="BLE Devices" HorizontalAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top" Width="340"
                   SelectionChanged="cbDevices_SelectionChanged"
                   DropDownOpened="cbDevices_DropDownOpened"/>
-        <ComboBox x:Name="cbServices" ItemsSource="{x:Bind services, Mode=OneWay}" DisplayMemberPath="Name" PlaceholderText="Services" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="340"
+        <ComboBox x:Name="cbServices" ItemsSource="{x:Bind services, Mode=OneWay}" DisplayMemberPath="Name" PlaceholderText="Services" HorizontalAlignment="Center" Margin="10,47,0,0" VerticalAlignment="Top" Width="340"
                   SelectionChanged="cbServices_SelectionChanged"/>
-        <ComboBox x:Name="cbCharacteristics" ItemsSource="{x:Bind characteristics, Mode=OneWay}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="340" PlaceholderText="Characteristics"
+        <ComboBox x:Name="cbCharacteristics" ItemsSource="{x:Bind characteristics, Mode=OneWay}" DisplayMemberPath="Name" HorizontalAlignment="Center" Margin="10,84,0,0" VerticalAlignment="Top" Width="340" PlaceholderText="Characteristics"
                   SelectionChanged="cbCharacteristics_SelectionChanged"/>
-        <TextBox x:Name="tbTerminal" HorizontalAlignment="Left" Margin="10,130,0,0" Text="" VerticalAlignment="Top" Height="10" Width="340" FontSize="15" TextWrapping="NoWrap" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" TextChanging="tbTerminal_TextChanging" RenderTransformOrigin="0.5,0.494"/>
-        <TextBlock x:Name="tbResponse" Text="" HorizontalAlignment="Left" Margin="18,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="445" Width="327" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="tbTerminal" HorizontalAlignment="Center" Margin="10,130,0,0" Text="" VerticalAlignment="Top" Height="10" Width="340" FontSize="15" TextWrapping="NoWrap" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" TextChanging="tbTerminal_TextChanging" RenderTransformOrigin="0.5,0.494"/>
+        <TextBlock x:Name="tbResponse" Text="" HorizontalAlignment="Center" Margin="10,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="445" Width="340" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Page>
